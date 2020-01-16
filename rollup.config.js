@@ -15,6 +15,17 @@ let plugins = [
 
 export default [
   {
+    input: 'src/node-index.js',
+    plugins,
+    output: [
+      {
+        file: pkg.main,
+        name: 'utils',
+        format: 'cjs'
+      }
+    ]
+  },
+  {
     input: 'src/index.js',
     plugins,
     output: [
