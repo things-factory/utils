@@ -19,3 +19,7 @@ export function isMobileDevice() {
 export function isIOS() {
   return os === 'iOS'
 }
+
+export function isMacOS() {
+  return os === 'Mac'
+}
